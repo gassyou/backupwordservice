@@ -1,0 +1,143 @@
+2024-05-17 14:32:57 Information Initialized Scheduler Signaller of type: Quartz.Core.SchedulerSignalerImpl
+2024-05-17 14:32:57 Information Quartz Scheduler created
+2024-05-17 14:32:57 Information JobFactory set to: Quartz.Simpl.MicrosoftDependencyInjectionJobFactory
+2024-05-17 14:32:57 Information RAMJobStore initialized.
+2024-05-17 14:32:57 Information Quartz Scheduler 3.9.0.0 - 'QuartzScheduler' with instanceId 'NON_CLUSTERED' initialized
+2024-05-17 14:32:57 Information Using thread pool 'Quartz.Simpl.DefaultThreadPool', size: 10
+2024-05-17 14:32:57 Information Using job store 'Quartz.Simpl.RAMJobStore', supports persistence: False, clustered: False
+2024-05-17 14:32:57 Information Application started. Press Ctrl+C to shut down.
+2024-05-17 14:32:57 Information Scheduler QuartzScheduler_$_NON_CLUSTERED started.
+2024-05-17 14:32:57 Information Hosting environment: Production
+2024-05-17 14:32:57 Information Content root path: c:\Users\孙昊\Desktop\backup\backupwordservice\bin\Debug\net8.0
+2024-05-17 14:32:57 Information 开始备份C:\Users\孙昊\Desktop\backup\backupwordservice\source2 目录
+2024-05-17 14:32:57 Information C:\Users\孙昊\Desktop\backup\backupwordservice\source2 目录备份结束
+2024-05-17 14:32:57 Information 开始删除过期的备份文件夹
+2024-05-17 14:32:57 Information 结束删除过期的备份文件夹
+2024-05-17 14:32:58 Information 开始备份C:\Users\孙昊\Desktop\backup\backupwordservice\source2 目录
+2024-05-17 14:32:58 Information C:\Users\孙昊\Desktop\backup\backupwordservice\source2 目录备份结束
+2024-05-17 14:32:58 Information 开始删除过期的备份文件夹
+2024-05-17 14:32:58 Information 结束删除过期的备份文件夹
+2024-05-17 14:33:00 Information 开始备份C:\Users\孙昊\Desktop\backup\backupwordservice\source2 目录
+2024-05-17 14:33:00 Information C:\Users\孙昊\Desktop\backup\backupwordservice\source2 目录备份结束
+2024-05-17 14:33:00 Information 开始删除过期的备份文件夹
+2024-05-17 14:33:00 Information 结束删除过期的备份文件夹
+2024-05-17 14:33:02 Information 开始备份C:\Users\孙昊\Desktop\backup\backupwordservice\source2 目录
+2024-05-17 14:33:02 Information C:\Users\孙昊\Desktop\backup\backupwordservice\source2 目录备份结束
+2024-05-17 14:33:02 Information 开始删除过期的备份文件夹
+2024-05-17 14:33:02 Information 结束删除过期的备份文件夹
+2024-05-17 14:33:04 Information 开始备份C:\Users\孙昊\Desktop\backup\backupwordservice\source2 目录
+2024-05-17 14:33:04 Information C:\Users\孙昊\Desktop\backup\backupwordservice\source2 目录备份结束
+2024-05-17 14:33:04 Information 开始删除过期的备份文件夹
+2024-05-17 14:33:04 Information 结束删除过期的备份文件夹
+2024-05-17 14:33:06 Information 开始备份C:\Users\孙昊\Desktop\backup\backupwordservice\source2 目录
+2024-05-17 14:33:06 Information C:\Users\孙昊\Desktop\backup\backupwordservice\source2 目录备份结束
+2024-05-17 14:33:06 Information 开始删除过期的备份文件夹
+2024-05-17 14:33:06 Information 结束删除过期的备份文件夹
+2024-05-17 14:33:08 Information 开始备份C:\Users\孙昊\Desktop\backup\backupwordservice\source2 目录
+2024-05-17 14:33:08 Information C:\Users\孙昊\Desktop\backup\backupwordservice\source2 目录备份结束
+2024-05-17 14:33:08 Information 开始删除过期的备份文件夹
+2024-05-17 14:33:08 Information 结束删除过期的备份文件夹
+2024-05-17 14:33:10 Information 开始备份C:\Users\孙昊\Desktop\backup\backupwordservice\source2 目录
+2024-05-17 14:33:10 Information C:\Users\孙昊\Desktop\backup\backupwordservice\source2 目录备份结束
+2024-05-17 14:33:10 Information 开始删除过期的备份文件夹
+2024-05-17 14:33:10 Information 结束删除过期的备份文件夹
+2024-05-17 14:33:12 Information 开始备份C:\Users\孙昊\Desktop\backup\backupwordservice\source2 目录
+2024-05-17 14:33:12 Information C:\Users\孙昊\Desktop\backup\backupwordservice\source2 目录备份结束
+2024-05-17 14:33:12 Information 开始删除过期的备份文件夹
+2024-05-17 14:33:12 Information 结束删除过期的备份文件夹
+2024-05-17 14:33:14 Information 开始备份C:\Users\孙昊\Desktop\backup\backupwordservice\source2 目录
+2024-05-17 14:33:14 Information C:\Users\孙昊\Desktop\backup\backupwordservice\source2 目录备份结束
+2024-05-17 14:33:14 Information 开始删除过期的备份文件夹
+2024-05-17 14:33:14 Information 结束删除过期的备份文件夹
+2024-05-17 14:33:16 Information 开始备份C:\Users\孙昊\Desktop\backup\backupwordservice\source2 目录
+2024-05-17 14:33:16 Information C:\Users\孙昊\Desktop\backup\backupwordservice\source2 目录备份结束
+2024-05-17 14:33:16 Information 开始删除过期的备份文件夹
+2024-05-17 14:33:16 Information 结束删除过期的备份文件夹
+2024-05-17 14:33:18 Information 开始备份C:\Users\孙昊\Desktop\backup\backupwordservice\source2 目录
+2024-05-17 14:33:18 Information C:\Users\孙昊\Desktop\backup\backupwordservice\source2 目录备份结束
+2024-05-17 14:33:18 Information 开始删除过期的备份文件夹
+2024-05-17 14:33:18 Information 结束删除过期的备份文件夹
+2024-05-17 14:33:20 Information 开始备份C:\Users\孙昊\Desktop\backup\backupwordservice\source2 目录
+2024-05-17 14:33:20 Information C:\Users\孙昊\Desktop\backup\backupwordservice\source2 目录备份结束
+2024-05-17 14:33:20 Information 开始删除过期的备份文件夹
+2024-05-17 14:33:20 Information 结束删除过期的备份文件夹
+2024-05-17 14:33:22 Information 开始备份C:\Users\孙昊\Desktop\backup\backupwordservice\source2 目录
+2024-05-17 14:33:22 Information C:\Users\孙昊\Desktop\backup\backupwordservice\source2 目录备份结束
+2024-05-17 14:33:22 Information 开始删除过期的备份文件夹
+2024-05-17 14:33:22 Information 结束删除过期的备份文件夹
+2024-05-17 14:33:24 Information 开始备份C:\Users\孙昊\Desktop\backup\backupwordservice\source2 目录
+2024-05-17 14:33:24 Information C:\Users\孙昊\Desktop\backup\backupwordservice\source2 目录备份结束
+2024-05-17 14:33:24 Information 开始删除过期的备份文件夹
+2024-05-17 14:33:24 Information 结束删除过期的备份文件夹
+2024-05-17 14:33:26 Information 开始备份C:\Users\孙昊\Desktop\backup\backupwordservice\source2 目录
+2024-05-17 14:33:26 Information C:\Users\孙昊\Desktop\backup\backupwordservice\source2 目录备份结束
+2024-05-17 14:33:26 Information 开始删除过期的备份文件夹
+2024-05-17 14:33:26 Information 结束删除过期的备份文件夹
+2024-05-17 14:33:28 Information 开始备份C:\Users\孙昊\Desktop\backup\backupwordservice\source2 目录
+2024-05-17 14:33:28 Information C:\Users\孙昊\Desktop\backup\backupwordservice\source2 目录备份结束
+2024-05-17 14:33:28 Information 开始删除过期的备份文件夹
+2024-05-17 14:33:28 Information 结束删除过期的备份文件夹
+2024-05-17 14:33:30 Information 开始备份C:\Users\孙昊\Desktop\backup\backupwordservice\source2 目录
+2024-05-17 14:33:30 Information C:\Users\孙昊\Desktop\backup\backupwordservice\source2 目录备份结束
+2024-05-17 14:33:30 Information 开始删除过期的备份文件夹
+2024-05-17 14:33:30 Information 结束删除过期的备份文件夹
+2024-05-17 14:33:32 Information 开始备份C:\Users\孙昊\Desktop\backup\backupwordservice\source2 目录
+2024-05-17 14:33:32 Information C:\Users\孙昊\Desktop\backup\backupwordservice\source2 目录备份结束
+2024-05-17 14:33:32 Information 开始删除过期的备份文件夹
+2024-05-17 14:33:32 Information 结束删除过期的备份文件夹
+2024-05-17 14:33:34 Information 开始备份C:\Users\孙昊\Desktop\backup\backupwordservice\source2 目录
+2024-05-17 14:33:34 Information C:\Users\孙昊\Desktop\backup\backupwordservice\source2 目录备份结束
+2024-05-17 14:33:34 Information 开始删除过期的备份文件夹
+2024-05-17 14:33:34 Information 结束删除过期的备份文件夹
+2024-05-17 14:33:36 Information 开始备份C:\Users\孙昊\Desktop\backup\backupwordservice\source2 目录
+2024-05-17 14:33:36 Information C:\Users\孙昊\Desktop\backup\backupwordservice\source2 目录备份结束
+2024-05-17 14:33:36 Information 开始删除过期的备份文件夹
+2024-05-17 14:33:36 Information 结束删除过期的备份文件夹
+2024-05-17 14:33:38 Information 开始备份C:\Users\孙昊\Desktop\backup\backupwordservice\source2 目录
+2024-05-17 14:33:38 Information C:\Users\孙昊\Desktop\backup\backupwordservice\source2 目录备份结束
+2024-05-17 14:33:38 Information 开始删除过期的备份文件夹
+2024-05-17 14:33:38 Information 结束删除过期的备份文件夹
+2024-05-17 14:33:40 Information 开始备份C:\Users\孙昊\Desktop\backup\backupwordservice\source2 目录
+2024-05-17 14:33:40 Information C:\Users\孙昊\Desktop\backup\backupwordservice\source2 目录备份结束
+2024-05-17 14:33:40 Information 开始删除过期的备份文件夹
+2024-05-17 14:33:40 Information 结束删除过期的备份文件夹
+2024-05-17 14:33:42 Information 开始备份C:\Users\孙昊\Desktop\backup\backupwordservice\source2 目录
+2024-05-17 14:33:42 Information C:\Users\孙昊\Desktop\backup\backupwordservice\source2 目录备份结束
+2024-05-17 14:33:42 Information 开始删除过期的备份文件夹
+2024-05-17 14:33:42 Information 结束删除过期的备份文件夹
+2024-05-17 14:33:44 Information 开始备份C:\Users\孙昊\Desktop\backup\backupwordservice\source2 目录
+2024-05-17 14:33:44 Information C:\Users\孙昊\Desktop\backup\backupwordservice\source2 目录备份结束
+2024-05-17 14:33:44 Information 开始删除过期的备份文件夹
+2024-05-17 14:33:44 Information 结束删除过期的备份文件夹
+2024-05-17 14:33:46 Information 开始备份C:\Users\孙昊\Desktop\backup\backupwordservice\source2 目录
+2024-05-17 14:33:46 Information C:\Users\孙昊\Desktop\backup\backupwordservice\source2 目录备份结束
+2024-05-17 14:33:46 Information 开始删除过期的备份文件夹
+2024-05-17 14:33:46 Information 结束删除过期的备份文件夹
+2024-05-17 14:33:48 Information 开始备份C:\Users\孙昊\Desktop\backup\backupwordservice\source2 目录
+2024-05-17 14:33:48 Information C:\Users\孙昊\Desktop\backup\backupwordservice\source2 目录备份结束
+2024-05-17 14:33:48 Information 开始删除过期的备份文件夹
+2024-05-17 14:33:48 Information 结束删除过期的备份文件夹
+2024-05-17 14:33:50 Information 开始备份C:\Users\孙昊\Desktop\backup\backupwordservice\source2 目录
+2024-05-17 14:33:50 Information C:\Users\孙昊\Desktop\backup\backupwordservice\source2 目录备份结束
+2024-05-17 14:33:50 Information 开始删除过期的备份文件夹
+2024-05-17 14:33:50 Information 结束删除过期的备份文件夹
+2024-05-17 14:33:52 Information 开始备份C:\Users\孙昊\Desktop\backup\backupwordservice\source2 目录
+2024-05-17 14:33:52 Information C:\Users\孙昊\Desktop\backup\backupwordservice\source2 目录备份结束
+2024-05-17 14:33:52 Information 开始删除过期的备份文件夹
+2024-05-17 14:33:52 Information 结束删除过期的备份文件夹
+2024-05-17 14:33:54 Information 开始备份C:\Users\孙昊\Desktop\backup\backupwordservice\source2 目录
+2024-05-17 14:33:54 Information C:\Users\孙昊\Desktop\backup\backupwordservice\source2 目录备份结束
+2024-05-17 14:33:54 Information 开始删除过期的备份文件夹
+2024-05-17 14:33:54 Information 结束删除过期的备份文件夹
+2024-05-17 14:33:56 Information 开始备份C:\Users\孙昊\Desktop\backup\backupwordservice\source2 目录
+2024-05-17 14:33:56 Information C:\Users\孙昊\Desktop\backup\backupwordservice\source2 目录备份结束
+2024-05-17 14:33:56 Information 开始删除过期的备份文件夹
+2024-05-17 14:33:56 Information 结束删除过期的备份文件夹
+2024-05-17 14:33:58 Information 开始备份C:\Users\孙昊\Desktop\backup\backupwordservice\source2 目录
+2024-05-17 14:33:58 Information C:\Users\孙昊\Desktop\backup\backupwordservice\source2 目录备份结束
+2024-05-17 14:33:58 Information 开始删除过期的备份文件夹
+2024-05-17 14:33:58 Information 结束删除过期的备份文件夹
+2024-05-17 14:34:00 Information 开始备份C:\Users\孙昊\Desktop\backup\backupwordservice\source2 目录
+2024-05-17 14:34:00 Information C:\Users\孙昊\Desktop\backup\backupwordservice\source2 目录备份结束
+2024-05-17 14:34:00 Information 开始删除过期的备份文件夹
+2024-05-17 14:34:00 Information 结束删除过期的备份文件夹

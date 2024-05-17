@@ -1,0 +1,4 @@
+C:\Users\孙昊\Desktop\backup\backupwordservice\bin\Release\net8.0\win-x64\publish\appsettings.Development.json
+C:\Users\孙昊\Desktop\backup\backupwordservice\bin\Release\net8.0\win-x64\publish\appsettings.json
+C:\Users\孙昊\Desktop\backup\backupwordservice\bin\Release\net8.0\win-x64\publish\backupwordservice.pdb
+C:\Users\孙昊\Desktop\backup\backupwordservice\bin\Release\net8.0\win-x64\publish\backupwordservice.exe
