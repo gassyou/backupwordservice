@@ -30,6 +30,14 @@ public class BackupJob : IJob
         {
             _logger.LogInformation($"开始备份{backup.Source} 目录");
 
+
+            // 判断源文件是存在
+            if (!File.Exists(backup.Source) && !Directory.Exists(backup.Source))
+            {
+                _logger.LogInformation($"{backup.Source} 源目录不存在,备份结束。（不删除过期备份） \r\n");
+                continue;
+            }
+
             // 以日期格式创建备份文件夹
             var backupFolder = Path.Combine(backup.DestinationFolder, todayString);
             // 如果备份文件夹存在 则删除
@@ -39,26 +47,30 @@ public class BackupJob : IJob
             }
             DirectoryInfo backFolderDir = new DirectoryInfo(backupFolder);
 
-            var source = CombineSourceFolder(backup.Source, backup.SubFolder, today);
-            string[] conditions = ConvertConditions(backup.Conditions);
+            // 获取备份条件
+            string[] conditions = CreateBackupConditions(backup.Conditions);
 
-            FileAttributes attr = File.GetAttributes(source);
-            // 判断是否为文件夹
+            // 判断源文件是否为文件夹
+            FileAttributes attr = File.GetAttributes(backup.Source);
             if (!attr.HasFlag(FileAttributes.Directory))
             {
                 // 如果是文件，则直接复制到备份文件夹
-                CopyFile(backup.Source, backupFolder, conditions);
-                continue;
+                CopyFile(new FileInfo(backup.Source), backFolderDir, conditions);
+            }
+            else 
+            {
+                var source = CombineSourceFolder(backup.Source, backup.SubFolder, today);
+
+                // 复制文件到备份文件夹
+                CopyFolder(new DirectoryInfo(source), backFolderDir, conditions);
             }
 
-            // 复制文件到备份文件夹
-            CopyFolder(new DirectoryInfo(source), backFolderDir, conditions);
             _logger.LogInformation($"{backup.Source} 目录备份结束");
 
 
             _logger.LogInformation($"开始删除过期的备份文件夹");
-            DeleteExpiredBackupFiles(backFolderDir, backup.KeepDays, today);
-           _logger.LogInformation($"结束删除过期的备份文件夹\n");
+            DeleteExpiredBackupFiles(new DirectoryInfo(backup.DestinationFolder), backup.KeepDays, today);
+            _logger.LogInformation($"结束删除过期的备份文件夹 \r\n");
         }
         return Task.CompletedTask;
     }
@@ -66,9 +78,16 @@ public class BackupJob : IJob
     // 删除过期备份文件
     private void DeleteExpiredBackupFiles(DirectoryInfo destinationFolder, int days, DateTime today)
     {
+        if (!destinationFolder.Exists)
+        {
+            _logger.LogInformation($"{destinationFolder.FullName} 备份目录不存在");
+            return;
+        }
         foreach (DirectoryInfo dir in destinationFolder.GetDirectories())
         {
-            if (today.CompareTo(dir.CreationTime) > days)
+            // 计算日期差
+            var daysDiff = today.Subtract(dir.CreationTime).Days;
+            if (daysDiff > days)
             {
                 dir.Delete(true);
                 _logger.LogInformation(dir.FullName + " 删除成功。");
@@ -79,15 +98,22 @@ public class BackupJob : IJob
     // 合并源 目录 
     private string CombineSourceFolder(string path, string subFolder, DateTime today)
     {
+
         if (!subFolder.IsNullOrWhiteSpace())
         {
-            path = Path.Combine(path, today.Year.ToString(), today.Month.ToString(), today.Day.ToString());
+            subFolder = subFolder.Replace(">>", "-");
+            var todayString = today.ToString(subFolder);
+
+            foreach (var item in todayString.Split("-"))
+            {
+                path = Path.Combine(path, item);
+            }
         }
         return path;
     }
 
     // 转换条件
-    private string[] ConvertConditions(string condition)
+    private string[] CreateBackupConditions(string condition)
     {
         if (condition.IsNullOrWhiteSpace())
         {
@@ -108,21 +134,26 @@ public class BackupJob : IJob
     }
 
     // 拷贝文件到指定目录
-    private void CopyFile(string sourceFile, string destFile, String[] conditions)
+    private void CopyFile(FileInfo source, DirectoryInfo target, String[] conditions)
     {
-        // 检查目标文件夹是否存在，如果不存在则创建
-        if (!Directory.Exists(Path.GetDirectoryName(destFile)))
+        // 检查源文件是否存在，如果不存在则 警告并返回
+        if (!source.Exists)
         {
-            Directory.CreateDirectory(Path.GetDirectoryName(destFile));
+            _logger.LogInformation($"{source.FullName} 不存在，跳过复制");
+            return;
         }
-
-        FileInfo source = new FileInfo(sourceFile);
+        
+        // 检查目标文件夹是否存在，如果不存在则创建
+        if (!target.Exists)
+        {
+            target.Create();
+        }
 
         // 复制文件到目标文件夹
         bool result = conditions.Aggregate(true, (result, item) => result && source.Name.Contains(item));
-        if (result && source.Exists)
+        if (result)
         {
-            source.CopyTo(destFile, true);
+            source.CopyTo(Path.Combine(target.ToString(), source.Name), true);
         }
     }
 
@@ -131,7 +162,7 @@ public class BackupJob : IJob
         // 检查源文件夹是否存在
         if (!source.Exists)
         {
-            _logger.LogInformation($"{target.FullName} 不存在，跳过复制");
+            _logger.LogInformation($"{source.FullName} 不存在，跳过复制");
             return;
         }
 
@@ -145,11 +176,7 @@ public class BackupJob : IJob
         foreach (FileInfo fi in source.GetFiles())
         {
             // 复制文件到目标文件夹
-            bool result = conditions.Aggregate(true, (result, item) => result && fi.Name.Contains(item));
-            if (result)
-            {
-                fi.CopyTo(Path.Combine(target.ToString(), fi.Name), true);
-            }
+            CopyFile(fi, target, conditions);
         }
 
         // 遍历源文件夹下的所有子文件夹

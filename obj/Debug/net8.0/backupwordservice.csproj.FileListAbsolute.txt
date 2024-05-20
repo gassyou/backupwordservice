@@ -63,3 +63,4 @@ C:\Users\孙昊\Desktop\backup\backupwordservice\obj\Debug\net8.0\refint\backupw
 C:\Users\孙昊\Desktop\backup\backupwordservice\obj\Debug\net8.0\backupwordservice.pdb
 C:\Users\孙昊\Desktop\backup\backupwordservice\obj\Debug\net8.0\backupwordservice.genruntimeconfig.cache
 C:\Users\孙昊\Desktop\backup\backupwordservice\obj\Debug\net8.0\ref\backupwordservice.dll
+c:\Users\孙昊\Desktop\backup\backupwordservice\obj\Debug\net8.0\backupwordservice.sourcelink.json

@@ -238,3 +238,4 @@ C:\Users\孙昊\Desktop\backup\backupwordservice\obj\Release\net8.0\win-x64\refi
 C:\Users\孙昊\Desktop\backup\backupwordservice\obj\Release\net8.0\win-x64\backupwordservice.pdb
 C:\Users\孙昊\Desktop\backup\backupwordservice\obj\Release\net8.0\win-x64\backupwordservice.genruntimeconfig.cache
 C:\Users\孙昊\Desktop\backup\backupwordservice\obj\Release\net8.0\win-x64\ref\backupwordservice.dll
+C:\Users\孙昊\Desktop\backup\backupwordservice\obj\Release\net8.0\win-x64\backupwordservice.sourcelink.json
